@@ -25,6 +25,24 @@ namespace ArrayDemo2
 			return -1;
 		}
 
+		static bool GoAgain()
+		{
+			while (true)
+			{
+				Console.Write("Would you like to go again? (y/n)");
+				string entry = Console.ReadLine();
+				if (entry.ToLower() == "n")
+				{
+					return false;
+				}
+				if (entry.ToLower() == "y")
+				{
+					return true;
+				}
+				Console.WriteLine("I'm sorry I don't know what that means.");
+			}
+		}
+
 		static void Main(string[] args)
 		{
 			/*
@@ -44,31 +62,26 @@ namespace ArrayDemo2
 			string[] items = new string[] { "Coffee", "Espresso", "Muffin", "Croissant" };
 			decimal[] prices = new decimal[] { 2.00m, 2.50m, 3.50m, 4.00m };
 
-			PrintMenu(items, prices);
-
-			Console.WriteLine("Please make a selection:");
-			string entry = Console.ReadLine();
-			int index = FindItem(items, entry);
-
-			//Console.WriteLine(index);
-
-			if (index > -1)
+			do
 			{
-				Console.WriteLine($"The price of {items[index]} is {prices[index]}");
-			}
-			else
-			{
-				Console.WriteLine($"Sorry, we do not have {entry}.");
-			}
 
-			//for (int i = 0; i < items.Length; i++)
-			//{
-			//	if (items[i].ToLower() == entry.ToLower())
-			//	{
-			//		Console.WriteLine($"The price of {items[i]} is {prices[i]}");
-			//		break;
-			//	}
-			//}
+				PrintMenu(items, prices);
+
+				Console.WriteLine("Please make a selection:");
+				string entry = Console.ReadLine();
+				int index = FindItem(items, entry);
+
+				if (index > -1)
+				{
+					Console.WriteLine($"The price of {items[index]} is {prices[index]}");
+				}
+				else
+				{
+					Console.WriteLine($"Sorry, we do not have {entry}.");
+				}
+			}
+			while (GoAgain());
+
 		}
 	}
 }
