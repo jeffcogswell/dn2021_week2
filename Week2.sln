@@ -5,6 +5,13 @@ VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayDemo1", "ArrayDemo1\ArrayDemo1.csproj", "{69EB67F5-9A9C-4AB4-A4DE-F9586E0495FF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F78557B-D05B-480C-9E44-5C0C7917E575}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayDemo2", "ArrayDemo2\ArrayDemo2.csproj", "{BB26063E-4B25-41C4-8AC9-AB52F352F4F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{69EB67F5-9A9C-4AB4-A4DE-F9586E0495FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69EB67F5-9A9C-4AB4-A4DE-F9586E0495FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69EB67F5-9A9C-4AB4-A4DE-F9586E0495FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB26063E-4B25-41C4-8AC9-AB52F352F4F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB26063E-4B25-41C4-8AC9-AB52F352F4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB26063E-4B25-41C4-8AC9-AB52F352F4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB26063E-4B25-41C4-8AC9-AB52F352F4F5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
